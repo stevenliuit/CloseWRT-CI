@@ -14,6 +14,26 @@ on:
     inputs:
       PACKAGE:
         description: '手动调整插件包，多个请用\n符号隔开。'
+        default: |
+          CONFIG_PACKAGE_luci-theme-argon=y
+          CONFIG_PACKAGE_luci-theme-aurora=y
+          CONFIG_PACKAGE_luci-app-aurora-config=y
+          CONFIG_PACKAGE_luci-app-openclash=y
+          CONFIG_PACKAGE_luci-app-passwall=y
+          CONFIG_PACKAGE_luci-app-tailscale=y
+          CONFIG_PACKAGE_luci-app-ddns-go=y
+          CONFIG_PACKAGE_luci-app-diskman=y
+          CONFIG_PACKAGE_luci-app-mini-diskmanager=y
+          CONFIG_PACKAGE_luci-app-easytier=y
+          CONFIG_PACKAGE_luci-app-mosdns=y
+          CONFIG_PACKAGE_luci-app-netspeedtest=y
+          CONFIG_PACKAGE_luci-app-netwizard=y
+          CONFIG_PACKAGE_luci-app-partexp=y
+          CONFIG_PACKAGE_luci-app-qmodem=y
+          CONFIG_PACKAGE_luci-app-quickfile=y
+          CONFIG_PACKAGE_luci-app-timecontrol=y
+          CONFIG_PACKAGE_luci-app-viking=y
+          CONFIG_PACKAGE_luci-app-vnt=y
         required: false
         type: string
       TEST:
