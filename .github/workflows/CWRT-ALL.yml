@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       PACKAGE:
-        description: '手动调整插件包，多个请用\n符号隔开。'
+        description: '追加 .config 行，每行一条 CONFIG_PACKAGE_xxx=y。默认包含 Packages.sh 中已启用的所有插件，留空则只装基础组件。'
         default: |
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-aurora=y
